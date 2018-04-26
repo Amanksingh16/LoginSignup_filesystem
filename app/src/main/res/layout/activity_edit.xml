@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.example.amansingh.loginsignup_filesystem.edit">
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:inputType="textPersonName"
+        android:text="Email" />
+
+    <RadioGroup
+        android:id="@+id/radioSex2"
+        android:layout_width="249dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/save_stu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stu_branch"
+        app:layout_constraintVertical_bias="0.347">
+
+
+
+        <RadioButton
+            android:id="@+id/male2"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="8dp"
+            android:text="Male"
+            android:checked="true"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stu_branch" />
+
+        <RadioButton
+            android:id="@+id/female2"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Female"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stu_branch"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"
+        android:textSize="18dp"
+        android:text="Save Details"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:background="@color/colorAccent"
+        />
+
+</LinearLayout>
